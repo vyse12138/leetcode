@@ -1,4 +1,5 @@
 const romanToInt = (s) => {
+    //replace some substrings with char
     s = s.replace('IV', 'a')
     .replace('IX', 'b')
     .replace('XL', 'c')
@@ -24,6 +25,7 @@ const romanToInt = (s) => {
             default : return 0;
         }
     }
+    //iterate each char in string
     let result = 0;
     for (let i=0; i<s.length; i++){
         result += toInt(s.charAt(i));
