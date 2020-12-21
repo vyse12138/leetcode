@@ -11,13 +11,19 @@
 
 //---method 2---
 var plusOne = function(digits) {
+    //iterate the array from right to left
     for (let i = digits.length-1 ; i>-1; i--){
+        //add one to the last digit in the digits array
         digits[i]++;
+        //if there is no carry, return the array
         if (digits[i] !== 10){
             break;
         }
+        //if there is a carry, keep iterating
         else{
             digits[i] = 0;
+            //when a carry exsit at the very left of the array,
+            //unshift 1 at the left of the array
             if ( i === 0){
                 digits.unshift(1);
             }
