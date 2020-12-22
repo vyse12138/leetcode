@@ -16,7 +16,6 @@ var summaryRanges = function(nums) {
             else {
                 result.push(`${nums[start]}->${nums[i-1]}`);
             }
-            //set the start index
             start = i;
         }
     }
