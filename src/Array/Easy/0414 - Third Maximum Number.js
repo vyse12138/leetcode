@@ -3,16 +3,16 @@
  * @return {number}
  */
 
- /*---solution---
- define 3 variables representing the first, second and the third max integer in the list,
- initializing them with the minimal safe integer,
- iterate through the list and compare the element with the 3 max integer,
- return the third max if exsit, else return the first max.
- */
+/*-----solution-----
+define 3 variables representing the first, second and the third max integer in the list,
+initializing them with the minimal safe integer,
+iterate through the list and compare the element with the 3 max integer,
+return the third max if exsit, else return the first max.
+*/
 var thirdMax = function(nums) {
     let max1 = Number.MIN_SAFE_INTEGER, max2 = Number.MIN_SAFE_INTEGER, max3 = Number.MIN_SAFE_INTEGER;
 
-    for (i = 0; i < nums.length; i++){
+    for (leti = 0; i < nums.length; i++){
         if (nums[i] > max1){
             max3 = max2;
             max2 = max1;
