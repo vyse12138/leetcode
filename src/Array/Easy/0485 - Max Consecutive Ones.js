@@ -8,6 +8,7 @@ set a variable to store the starting index of consecutive one,
 iterate the array and move the starting index when 0 is encountered,
 compare and store the max length of consecutive one.
 Time complexity is O(n)
+Space complexity is O(1)
 */
 var findMaxConsecutiveOnes = function(nums) {
     let start = 0, result = 0;
@@ -25,6 +26,7 @@ var findMaxConsecutiveOnes = function(nums) {
 Similar to soultion1 but use a counter instead.
 Compare would only be used when 0 encoutnered.
 Time complexity is O(n)
+Space complexity is O(1)
 */
 var findMaxConsecutiveOnes = function(nums) {
    let result = 0, count = 0;
