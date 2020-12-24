@@ -37,9 +37,8 @@ var nextPermutation = function (nums) {
         [nums[index2], nums[index1]] = [nums[index1], nums[index2]]
     }
 
-
-    index2 = nums.length - 1
-    index1++
+    index2 = nums.length - 1;
+    index1++;
     while (index1 < index2) {
         [nums[index2], nums[index1]] = [nums[index1], nums[index2]]
         index1++;
