@@ -9,6 +9,7 @@ initializing them with the minimal safe integer,
 iterate through the list and compare the element with the 3 max integer,
 return the third max if exsit, else return the first max.
 Time complexity is O(n)
+Space complexity is O(1)
 */
 var thirdMax = function(nums) {
     let max1 = Number.MIN_SAFE_INTEGER, max2 = Number.MIN_SAFE_INTEGER, max3 = Number.MIN_SAFE_INTEGER;
