@@ -2,6 +2,7 @@
  * @param {number} n
  * @return {number[][]}
  */
+
 /*-----solution-----
 Similar to q54, change the output to a two dimensional array,
 iterate in the same way 
