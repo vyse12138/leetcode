@@ -3,7 +3,7 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 
- /*-----solution-----
+/*-----solution-----
 2 flips.
 Flip 1 via vertical dividing line,
 flip 2 via bottom-left to top-right diagonal.
