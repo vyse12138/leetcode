@@ -2,6 +2,12 @@
  * @param {number[][]} matrix
  * @return {number[]}
  */
+
+/*-----solution-----
+Outputing by layer, 
+when all elements of an outer layer is iterated,
+go into a inside layer.
+*/
 var spiralOrder = function(matrix) {
     let 
         left = 0,
