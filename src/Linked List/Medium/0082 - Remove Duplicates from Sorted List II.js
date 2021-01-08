@@ -11,8 +11,7 @@
  */
 
 /*-----solution-----
-Iterate the linked list, when repeated node shows,
-delete it. Otherwise, keep iterating.
+Working on it
 Time complexity is O(n)
 Space complexity is O(1)
 */
