@@ -17,13 +17,13 @@ delete it. Otherwise, keep iterating.
 Time complexity is O(n)
 Space complexity is O(1)
 */
-var deleteDuplicates = function(head) {
-  pointer = head;
-  while (pointer !== null && pointer.next !== null) {
-    if (pointer.val === pointer.next.val){
+var deleteDuplicates = function (head) {
+  let pointer = head;
+  while (pointer && pointer.next) {
+    if (pointer.val === pointer.next.val) {
       pointer.next = pointer.next.next;
     }
-    else{
+    else {
       pointer = pointer.next;
     }
   }
