@@ -11,7 +11,7 @@
  * @return {boolean}
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 Set up two pointer, one is fast, the other is slow.
 In iteration, fast move twice and slow move once.
 When fast reaches the end of the list, return false.

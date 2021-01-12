@@ -1,3 +1,12 @@
+/**
+ * @param {number} rowIndex
+ * @return {number[]}
+ */
+
+/*----- solution 1 -----
+Time complexity is O(n^2)
+Space complexity is O(n)
+*/
 var getRow = function(rowIndex) {
     let result = [];
     for (let i = 0; i < rowIndex + 1; i++){

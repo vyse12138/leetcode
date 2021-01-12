@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 define 3 variables representing the first, second and the third max integer in the list,
 initializing them with the minimal safe integer,
 iterate through the list and compare the element with the 3 max integer,

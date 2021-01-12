@@ -10,7 +10,7 @@
  * @return {ListNode}
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 Working on it
 Time complexity is O(n)
 Space complexity is O(1)

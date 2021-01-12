@@ -1,3 +1,12 @@
+/**
+ * @param {number} numRows
+ * @return {number[][]}
+ */
+
+/*----- solution 1 -----
+Time complexity is O(n^2)
+Space complexity is O(n)
+*/
 var generate = function(numRows) {
     let result = [];
     for (let i = 0; i < numRows; i++){
@@ -7,7 +16,7 @@ var generate = function(numRows) {
                 row[j] = result[i-1][j-1] + result[i-1][j];
             }
         }
-        result.push(row)
+        result.push(row);
     }
     return result;
 };

@@ -12,7 +12,7 @@
  * @return {ListNode}
  */
 
-/*----- solution -----
+/*----- solution 1 -----
 Set up two linkedlist. One for odd and one for even.
 iterate the orginal linkedlist and compute odd and even linkedlist.
 Combind odd and even linkedlist.

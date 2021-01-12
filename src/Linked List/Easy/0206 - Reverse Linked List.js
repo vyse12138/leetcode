@@ -10,7 +10,7 @@
  * @return {ListNode}
  */
 
-/*-----solution 1-----
+/*----- solution 1 -----
 Iterate the list, set the next of the current node to its previous one.
 Time complexity is O(n)
 Space complexity is O(1)

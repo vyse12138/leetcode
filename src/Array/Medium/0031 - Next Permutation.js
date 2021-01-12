@@ -3,7 +3,7 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 
-/*-----solution-----
+/*----- solution 1 -----
     3 step to find the next permutation
 1.  Iterate from right until the number is not increasing,
     store the position in index1 and break the iteration.
@@ -17,6 +17,9 @@ e.g.[1, 4, 5, 3, 2]
     swap them, the array become [1, 5, 4 , 3, 2]
 3.  Reverse [4, 3, 2] in the array,
     then the array become [1, 5, 2, 3, 4]
+
+Time complexity is O(n)
+Space complexity is O(1)
 */
 var nextPermutation = function (nums) {
     let index1 = -1, index2;
@@ -43,7 +46,6 @@ var nextPermutation = function (nums) {
         index2--;
     }
     return nums;
-
 };
 
 

@@ -2,6 +2,11 @@
  * @param {number[]} nums
  * @return {string[]}
  */
+
+/*----- solution 1 -----
+Time complexity is O(n)
+Space complexity is O(1)
+*/
 var summaryRanges = function(nums) {
     //pointing at starting index of a range
     let start = 0;

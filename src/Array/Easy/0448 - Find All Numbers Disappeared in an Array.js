@@ -3,23 +3,23 @@
  * @return {number[]}
  */
 
-// /*-----solution1-----
-// use indexOf function to find missing numbers,
-// since indexOf function has a time complexity of O(log n)
-// Time complexity is O(n log n) which does not meet requirement
-// Space complexity is O(1)
-// */
-// var findDisappearedNumbers = function(nums) {
-//     let result = [];
-//     for (i = 0; i < nums.length; i++){
-//         if (nums.indexOf(i) == -1){
-//             result.push(i);
-//         }
-//     }
-//     return result;
-// };
+/*----- solution 1 -----
+use indexOf function to find missing numbers,
+since indexOf function has a time complexity of O(log n)
+Time complexity is O(n log n) which does not meet requirement
+Space complexity is O(1)
+*/
+var findDisappearedNumbers = function(nums) {
+    let result = [];
+    for (i = 0; i < nums.length; i++){
+        if (nums.indexOf(i) == -1){
+            result.push(i);
+        }
+    }
+    return result;
+};
 
-/*-----solution2-----
+/*----- solution 2 -----
 iterate the array, set the element at index |nums[i]|-1 to negative
 then all included numbers would be negative,
 iterate the array again and find the index of positive numbers

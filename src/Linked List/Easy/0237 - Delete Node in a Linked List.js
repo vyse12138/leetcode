@@ -10,7 +10,7 @@
  * @return {void} Do not return anything, modify node in-place instead.
  */
 
-/*----- solution -----
+/*----- solution 1 -----
 Change the val to the next node,
 delete the next node.
 Time complexity is O(1)

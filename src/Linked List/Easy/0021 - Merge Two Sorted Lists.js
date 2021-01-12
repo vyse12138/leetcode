@@ -11,12 +11,10 @@
  * @return {ListNode}
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 Set up a dummy head, keep iterating when l1 and l2 are both not null
 compare val at l1 and l2, append smaller one to the dummy head's list.
 Then append left over list.
-
-
 Time complexity is O(n + m) where n and m are the length of l1 and l2
 Space complexity is O(1)
 */

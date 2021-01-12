@@ -10,7 +10,7 @@
  * @return {ListNode}
  */
 
-/*----- solution -----
+/*----- solution 1 -----
 Example [1,2,3,4,5,6,7]
 Pointing at 1: Set 1.next to 4, 2.next to 1;
 Pointing at 3: Set 3.next to 6, 4.next to 3;

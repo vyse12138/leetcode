@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 
-/*-----solution 1-----
+/*----- solution 1 -----
 using division, 
 cannot resolve when imput elements contains zero.
 Time complexity is O(n)
@@ -23,7 +23,7 @@ var productExceptSelf = function (nums) {
   return result;
 };
 
-/*-----solution 2-----
+/*----- solution 2 -----
 exceed size
 Time complexity is O(n^2)
 Space complexity is O(1)
@@ -42,8 +42,7 @@ var productExceptSelf = function (nums) {
   return result;
 };
 
-/*-----solution 3-----
-
+/*----- solution 3 -----
 Time complexity is O(n)
 Space complexity is O(1)
 */
@@ -64,8 +63,7 @@ var productExceptSelf = function (nums) {
   return output;
 };
 
-/*-----solution 4-----
-
+/*----- solution 4 -----
 Time complexity is O(n)
 Space complexity is O(1)
 */
@@ -75,7 +73,6 @@ var productExceptSelf = function (nums) {
     output = new Array(length).fill(1),
     l = 1,
     r = 1;
-
   for (let i = 1; i < length; i++) {
     l *= nums[i-1];
     r *= nums[length-i];

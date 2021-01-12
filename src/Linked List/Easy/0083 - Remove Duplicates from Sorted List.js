@@ -11,7 +11,7 @@
  */
 
 
-/*-----solution-----
+/*----- solution 1 -----
 Iterate the linked list, when repeated node shows,
 delete it. Otherwise, keep iterating.
 Time complexity is O(n)

@@ -3,10 +3,12 @@
  * @return {number[]}
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 Outputing by layer, 
 when all elements of an outer layer is iterated,
 go into a inside layer.
+Time complexity is O(n^2)
+Space complexity is O(1)
 */
 var spiralOrder = function(matrix) {
     let 

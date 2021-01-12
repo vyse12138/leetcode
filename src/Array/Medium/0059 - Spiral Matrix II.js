@@ -3,9 +3,11 @@
  * @return {number[][]}
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 Similar to q54, change the output to a two dimensional array,
 iterate in the same way 
+Time complexity is O(n^2)
+Space complexity is O(1)
 */
 var generateMatrix = function(n) {
     let 

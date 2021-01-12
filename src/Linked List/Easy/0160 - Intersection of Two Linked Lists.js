@@ -12,7 +12,7 @@
  * @return {ListNode}
  */
 
-/*-----solution 1-----
+/*----- solution 1 -----
 For each ndoe in list A, iterate list B,
 check if there is an identical node.
 Time complexity is O(mn)
@@ -32,8 +32,7 @@ var getIntersectionNode = function(headA, headB) {
   return null;
 };
 
-/*-----solution 2-----
-
+/*----- solution 2 -----
 Time complexity is O(m + n)
 Space complexity is O(1)
 */

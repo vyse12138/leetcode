@@ -11,7 +11,7 @@
  * @return {ListNode}
  */
 
-/*----- solution -----
+/*----- solution 1 -----
 Two iteration. 
 In the first one, find the length of the list,
 then attach the last node to the first.

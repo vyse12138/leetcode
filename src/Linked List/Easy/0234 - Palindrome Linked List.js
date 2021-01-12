@@ -27,7 +27,7 @@ var isPalindrome = function(head) {
 };
 
 
-/*----- solution -----
+/*----- solution 1 -----
 Step1: use fast slow pointer to find the middle node of the list.
 Step2: reverse the list from the middle node to the end.
 Step3: compare the list before and after the middle node. (check palindrome)

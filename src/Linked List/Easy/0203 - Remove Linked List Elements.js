@@ -11,7 +11,7 @@
  * @return {ListNode}
  */
 
-/*-----solution 1-----
+/*----- solution 1 -----
 See solution 2
 Time complexity is O(n)
 Space complexity is O(1)
@@ -27,7 +27,7 @@ var removeElements = function(head, val) {
   return dummyHead.next;
 };
 
-/*-----solution 2-----
+/*----- solution 2 -----
 Iterate the list, find the node need to be deleted,
 delete it.
 Time complexity is O(n)

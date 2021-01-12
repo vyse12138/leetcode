@@ -3,13 +3,14 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 
-/*-----solution-----
+/*----- solution 1 -----
 Iterate the array, if element at matrix[col][row] is zero,
 we set the first element at columu 'col' and at row 'row' to zero.
 When the iterate is finished, we go back and set zeroes to the array.
 Since the very first element matrix[0][0] is shared by both row and col,
 some restriction is added.
-
+Time complexity is O(n^2)
+Space complexity is O(1)
 */
 var setZeroes = function(matrix) {
     const size = matrix.length * matrix[0].length;
@@ -32,7 +33,6 @@ var setZeroes = function(matrix) {
             col++;
         }
     }
-
     for (let i = 1; i < matrix[0].length; i++){
         if (matrix[0][i] === 0){
             for (let j = 0; j < matrix.length; j++){
@@ -40,7 +40,6 @@ var setZeroes = function(matrix) {
             }
         }
     }
-
     for (let i = 1; i < matrix.length; i++){
         if (matrix[i][0] === 0){
             for (let j = 0; j < matrix[0].length; j++){
@@ -59,7 +58,6 @@ var setZeroes = function(matrix) {
                 matrix[i][0] = 0;
             }
         }
-
     }
     return matrix;
 };

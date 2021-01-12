@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-/*-----solution1-----
+/*----- solution 1 -----
 set a variable to store the starting index of consecutive one,
 iterate the array and move the starting index when 0 is encountered,
 compare and store the max length of consecutive one.
@@ -21,8 +21,7 @@ var findMaxConsecutiveOnes = function(nums) {
     return result;
 };
 
-
-/*-----solution2-----
+/*----- solution 2 -----
 Similar to soultion1 but use a counter instead.
 Compare would only be used when 0 encoutnered.
 Time complexity is O(n)
