@@ -11,7 +11,7 @@ value is the number of occurrence in magazine.
 In the second, build ransomNote up with letter in the map,
 while the letter required is not in the amgazine,
 return false.
-Time complexity is O(n)
+Time complexity is O(n^2)
 Space complexity is O(n)
 */
 var canConstruct = function(ransomNote, magazine) {
