@@ -33,7 +33,6 @@ Time complexity is O(n)
 Space complexity is O(1)
 */
 var reverseString = function(s) {
-  let temp;
   for (let i = 0; i < s.length / 2; i++) {
     [s[i],s[s.length - i - 1]] = [s[s.length - i - 1],s[i]]; 
   }
