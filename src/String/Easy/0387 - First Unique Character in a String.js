@@ -6,8 +6,8 @@
 /*----- solution 1 -----
 Set up a map where key is the char, value is the number of occurrence.
 Iterate the string, find char with occurrence of 1. 
-Time complexity is O(n^2)
-Space complexity is O(1)
+Time complexity is O(n)
+Space complexity is O(n)
 */
 var firstUniqChar = function(s) {
   let charMap = new Map;
