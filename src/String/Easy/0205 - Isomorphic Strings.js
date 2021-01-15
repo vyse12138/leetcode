@@ -13,8 +13,8 @@ If not, return false;
 Time complexity is O(n^2)
 Space complexity is O(n)
 */
-var isIsomorphic = function(s, t) {
-  let map = new Map,map2 = new Map;
+var isIsomorphic = function (s, t) {
+  let map = new Map, map2 = new Map;
   for (let i = 0; i < s.length; i++) {
     if (map.has(s[i])) {
       if (t[i] !== map.get(s[i])) {
@@ -22,18 +22,35 @@ var isIsomorphic = function(s, t) {
       }
     }
     else {
-      map.set(s[i],t[i]);
+      map.set(s[i], t[i]);
     }
   }
   for (let i = 0; i < s.length; i++) {
-    if (map2.has(t[i])) {
-      if (s[i] !== map2.get(t[i])) {
-        return false;
-      }
+    if (map2.has(t[i]) && s[i] !== map2.get(t[i])) {
+
+      return false;
+
     }
     else {
-      map2.set(t[i],s[i]);
+      map2.set(t[i], s[i]);
     }
+  }
+  return true;
+};
+
+/*----- solution 2 -----
+Based on solution, combind two iterations into one.
+Time complexity is O(n^2)
+Space complexity is O(n)
+*/
+var isIsomorphic = function (s, t) {
+  let map = new Map, map2 = new Map;
+  for (let i = 0; i < s.length; i++) {
+    if (map.has(s[i]) && t[i] !== map.get(s[i]) || map2.has(t[i]) && s[i] !== map2.get(t[i])) {
+      return false;
+    }
+    map.set(s[i], t[i]);
+    map2.set(t[i], s[i]);
   }
   return true;
 };
