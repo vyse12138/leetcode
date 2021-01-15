@@ -9,7 +9,7 @@ Since slice requires O(n) time complexity
 where n = end - start,
 the oveall complexity is going to be n^2.
 Time complexity is O(n^2)
-Space complexity is O(1)
+Space complexity is O(n)
 */
 var reverseVowels = function (s) {
   let vowels = ['a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U'], vowelsIndex = [];
