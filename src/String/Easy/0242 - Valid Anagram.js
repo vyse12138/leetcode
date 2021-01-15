@@ -10,7 +10,7 @@ Iterate t for each element in s,
 delete occured element.
 When t is all cleared, return true.
 Time complexity is O(n^3)
-Space complexity is O(n)
+Space complexity is O(1)
 */
 var isAnagram = function (s, t) {
   if (s.length !== t.length) {
@@ -39,7 +39,7 @@ var isAnagram = function (s, t) {
 Convert to array, sort them.
 Then compare if they are identical.
 Time complexity is O(n^2)
-Space complexity is O(n)
+Space complexity is O(1)
 */
 var isAnagram = function (s, t) {
   return s.split('').sort().join('') === t.split('').sort().join('');
