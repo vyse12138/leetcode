@@ -12,13 +12,12 @@ We return the sign of the difference for the latter.
 Then we cut of the ending zeros and return the non-empty version as the larger version.
 If both empty, return 0 for equal.
 Time complexity is O(n^2) 
-Space complexity is O(1)
+Space complexity is O(n)
 */
 var compareVersion = function (version1, version2) {
   version1 = version1.split('.').map(Number);
   version2 = version2.split('.').map(Number);
-  let length = Math.min(version1.length, version2.length),
-  difference;
+  let difference;
   while (version1.length && version2.length) {
     difference = Math.sign((version1.shift() - version2.shift()));
     if (difference !== 0) {
