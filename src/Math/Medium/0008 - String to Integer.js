@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-/*----- solution 2 -----
+/*----- solution 1 -----
 Using parseInt API
 Time complexity is O(n)
 Space complexity is O(1)
