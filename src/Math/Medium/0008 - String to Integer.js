@@ -2,11 +2,22 @@
  * @param {string} s
  * @return {number}
  */
+
+/*----- solution 2 -----
+Using parseInt API
+Time complexity is O(n)
+Space complexity is O(1)
+*/
 var myAtoi = function(s) {
-  s = s.trim();
-  let sign = 1;
-  if (s[0] === '-') {
-    sign = -1;
-    s = s.substr(1, s.length-1);
+  s = parseInt(s);
+  if (isNaN(s)) {
+    return 0;
   }
+  if (s > (2^31 - 1)) {
+    return 2^31 - 1;
+  }
+  if (s < -2^31) {
+    return -2^31;
+  }
+  return s;
 };
