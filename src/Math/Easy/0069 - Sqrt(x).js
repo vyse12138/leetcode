@@ -5,7 +5,7 @@
 
 /*----- solution 1 -----
 Binary search
-Time complexity is O(log(n)
+Time complexity is O(log(n))
 Space complexity is O(1)
 */
 var mySqrt = function (x) {
