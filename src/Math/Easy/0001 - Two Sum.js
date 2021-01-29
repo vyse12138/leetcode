@@ -1,7 +1,7 @@
 /**
+ * @param {number[]} num
  * @param {number} num
- * @param {number} num
- * @return {array}
+ * @return {number[]}
  */
 
 /*----- solution 1 -----
