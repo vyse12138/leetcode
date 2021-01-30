@@ -47,7 +47,6 @@ var inorderTraversal = function (root) {
       result.push(root.val);
       root = root.right;
     }
-
   }
   return result;
 };
