@@ -20,7 +20,6 @@ var preorderTraversal = function (root) {
   const result = [], preorder = function(node) {
     if (node == null) {
       return;
-      
     }
     result.push(node.val);
     arguments.callee(node.left);
