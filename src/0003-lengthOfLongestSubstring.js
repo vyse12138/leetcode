@@ -9,6 +9,8 @@ Sliding window with a set to store occured character.
 keep moving forward left pointer until character at right pointer is no longer occured.
 2. proceed right pointer in each iteration.
 3. compare the current substring length with the longest substring.
+Time complexity is O(n^2) 
+Space complexity is O(n)
 */
 
 const lengthOfLongestSubstring = (s) => {
