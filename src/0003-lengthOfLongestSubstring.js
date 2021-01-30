@@ -1,24 +1,29 @@
-//      sliding window with a set to store occured character
-// 
-// 1.   check if character at right pointer has occured,
-//      if so, keep moving forward left pointer 
-//      until character at right pointer is no longer occured.
-// 2.   proceed right pointer in each iteration.
-// 3.   compare the current substring length with the longest substring.
+/**
+ * @param {string} s
+ * @return {number}
+ */
+
+/*----- solution 1 -----
+Sliding window with a set to store occured character.
+1. check if character at right pointer has occured,if so, 
+keep moving forward left pointer until character at right pointer is no longer occured.
+2. proceed right pointer in each iteration.
+3. compare the current substring length with the longest substring.
+*/
 
 const lengthOfLongestSubstring = (s) => {
 
     // set used to stored occured char
     const hasOccuredSet = new Set();
     let size = s.length,
-    leftPointer = 0,
-    rightPointer = 0,
-    result = 0;
+        leftPointer = 0,
+        rightPointer = 0,
+        result = 0;
 
-    while (rightPointer < size){
+    while (rightPointer < size) {
         // if the char at right pointer has occured, move left pointer by one and 
         // delete the char at left pointer until no char is the same as the char at right pointer
-        while (hasOccuredSet.has(s[rightPointer])){
+        while (hasOccuredSet.has(s[rightPointer])) {
             hasOccuredSet.delete(s[leftPointer])
             leftPointer++;
         }
@@ -27,7 +32,7 @@ const lengthOfLongestSubstring = (s) => {
         hasOccuredSet.add(s[rightPointer]);
         rightPointer++;
         // compare and stoer the largest length to result
-        result = Math.max(result, rightPointer-leftPointer);
+        result = Math.max(result, rightPointer - leftPointer);
 
     }
     return result;
