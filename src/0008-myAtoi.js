@@ -13,11 +13,11 @@ var myAtoi = function(s) {
   if (isNaN(s)) {
     return 0;
   }
-  if (s > (2^31 - 1)) {
-    return 2^31 - 1;
+  if (s > (2**31 - 1)) {
+    return 2**31 - 1;
   }
-  if (s < -2^31) {
-    return -2^31;
+  if (s < -(2**31)) {
+    return -(2**31);
   }
   return s;
 };
