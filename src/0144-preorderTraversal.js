@@ -17,13 +17,14 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var preorderTraversal = function (root) {
-  let result = [], preorder = (node) => {
+  const result = [], preorder = function(node) {
     if (node == null) {
       return;
+      
     }
     result.push(node.val);
-    preorder(node.left);
-    preorder(node.right);
+    arguments.callee(node.left);
+    arguments.callee(node.right);
   }
   preorder(root, result);
   return result;
@@ -36,7 +37,7 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var preorderTraversal = function (root) {
-  let result = [], stack = [];
+  const result = [], stack = [];
   if (root) {
     stack.push(root);
   }
