@@ -37,18 +37,21 @@ Space complexity is O(n)
 */
 var preorderTraversal = function (root) {
   const result = [], stack = [];
-  if (root) {
-    stack.push(root);
-  }
+  root && stack.push(root);
   while (stack.length) {
     let treeNode = stack.pop();
     result.push(treeNode.val);
-    if (treeNode.right) {
-      stack.push(treeNode.right);
-    }
-    if (treeNode.left) {
-      stack.push(treeNode.left);
-    }
+    treeNode.right && stack.push(treeNode.right);
+    treeNode.left && stack.push(treeNode.left);
   }
   return result;
+};
+
+/*----- solution 3 -----
+Recursion.
+Time complexity is O(n) 
+Space complexity is O(n)
+*/
+var preorderTraversal = function(root) {
+  return arguments[0] ? [arguments[0].val, ...arguments.callee(arguments[0].left), ...arguments.callee(arguments[0].right)] : [];
 };
