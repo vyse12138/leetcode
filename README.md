@@ -1,6 +1,6 @@
 # LeetCode-JavaScript
 
-个人Javascript刷Leetcode的解法
+个人 Javascript 刷 Leetcode 的解法
 
 有问题的话欢迎发新 issue ヾ(•ω•`)o
 
@@ -43,4 +43,4 @@
 |0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|               |简单|[字符串](https://leetcode-cn.com/tag/string/)，[栈](https://leetcode-cn.com/tag/stack/)|
 
 
-好懒啊...不想写readme... (；′⌒`)
+好懒啊...不想写readme... (っ °Д °;)っ
