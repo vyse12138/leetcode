@@ -40,27 +40,23 @@ var pathSum = function (root, targetSum) {
 
 /*----- solution 1 -----
 Recursion, DFS.
+Shorter version.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
 var pathSum = function (root, targetSum) {
-
-  let result = [], dfs = (node, path) => {
+  let result = [], path = [], dfs = (node, sum) => {
     if (node) {
       path.push(node.val);
-      if (!node.left && !node.right) {
-        let sum = path.reduce((a, b) => a +b);
-        if (sum === targetSum) {
-          result.push(path);
-        }
+      sum -= node.val;
+      if (!node.left && !node.right && sum === 0) {
+        result.push(path.slice());
       }
-      else {
-        dfs(node.left, path);
-        dfs(node.right, path);
-        path.pop();
-      }
+      dfs(node.left, sum);
+      dfs(node.right, sum);
+      path.pop();
     }
   }
-  dfs(root, []);
+  dfs(root, targetSum);
   return result;
 };
