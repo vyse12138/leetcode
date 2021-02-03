@@ -48,10 +48,9 @@
 |0025|[K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)|            |困难|[链表](https://leetcode-cn.com/tag/linked-list/)|
 |0026|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|                  |简单|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)|
 |0027|[移除元素](https://leetcode-cn.com/problems/remove-element/)|                         |简单|[数组](https://leetcode-cn.com/tag/array/)|
-|0028|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)|                     |简单|[字符串](https://leetcode-cn.com/tag/string/)|
-|0029|[两数相除](https://leetcode-cn.com/problems/divide-two-integers/)|[JavaScript](./src/0019-removeNthFromEnd.js)|中等|[数学](https://leetcode-cn.com/tag/math/)|
+|0028|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[JavaScript](./src/0028-strStr.js)|简单|[字符串](https://leetcode-cn.com/tag/string/)|
+|0029|[两数相除](https://leetcode-cn.com/problems/divide-two-integers/)|[JavaScript](./src/0029-divide.js)|中等|[数学](https://leetcode-cn.com/tag/math/)|
 |0030|[串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)|               |困难|[字符串](https://leetcode-cn.com/tag/string/)|
-
 
 
 
