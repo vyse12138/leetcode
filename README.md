@@ -51,10 +51,35 @@
 |0028|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[JavaScript](./src/0028-strStr.js)|简单|[字符串](https://leetcode-cn.com/tag/string/)|
 |0029|[两数相除](https://leetcode-cn.com/problems/divide-two-integers/)|[JavaScript](./src/0029-divide.js)|中等|[数学](https://leetcode-cn.com/tag/math/)|
 |0030|[串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)|               |困难|[字符串](https://leetcode-cn.com/tag/string/)|
-
-
-
-
+|0031|[下一个排列](https://leetcode-cn.com/problems/next-permutation/)|[JavaScript](./src/0031-nextPermutation.js)|中等|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)|
+|0032|[最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)|                |困难|[双指针](https://leetcode-cn.com/tag/two-pointers/)，[字符串](https://leetcode-cn.com/tag/string/)|
+|0033|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)|                       |中等|
+|0034|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|                     |中等|
+|0035|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)|                        |简单|
+|0036|[有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)|                            |中等|
+|0037|[解数独](https://leetcode-cn.com/problems/sudoku-solver/)|                             |困难|
+|0038|[外观数列](https://leetcode-cn.com/problems/count-and-say/)|[JavaScript](./src/0038-countAndSay.js)|简单|[字符串](https://leetcode-cn.com/tag/string/)，[递归](https://leetcode-cn.com/tag/recursion/)|
+|0039|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|                            |中等|
+|0040|[组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)|                         |中等|
+|0041|[]()|                             |中等|
+|0042|[]()|                          |困难|
+|0043|[]()|                         |中等|
+|0044|[]()|                          |中等|
+|0045|[]()|                              |简单|
+|0046|[]()|                            |中等|
+|0047|[]()|                             |困难|
+|0048|[]()|                           |简单|
+|0049|[]()|                            |中等|
+|0050|[]()|                              |困难|
+|0051|[]()|                             |中等|
+|0052|[]()|                          |困难|
+|0053|[]()|                         |中等|
+|0054|[]()|                          |中等|
+|0055|[]()|                              |简单|
+|0056|[]()|                            |中等|
+|0057|[]()|                             |困难|
+|0058|[]()|                           |简单|
+|0059|[]()|                            |中等|
 
 
 
