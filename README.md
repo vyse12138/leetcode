@@ -41,6 +41,22 @@
 |0018|[四数之和](https://leetcode-cn.com/problems/4sum/)|                     |中等|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)，[哈希表](https://leetcode-cn.com/tag/hash-table/)|
 |0019|[删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[JavaScript](./src/0019-removeNthFromEnd.js)|中等|[双指针](https://leetcode-cn.com/tag/two-pointers/)，[链表](https://leetcode-cn.com/tag/linked-list/)|
 |0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|               |简单|[字符串](https://leetcode-cn.com/tag/string/)，[栈](https://leetcode-cn.com/tag/stack/)|
+|0021|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[JavaScript](./src/0021-mergeTwoLists.js)|简单|[递归](https://leetcode-cn.com/tag/recursion/)，[链表](https://leetcode-cn.com/tag/linked-list/)|
+|0022|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|                |中等|[双指针](https://leetcode-cn.com/tag/two-pointers/)，[字符串](https://leetcode-cn.com/tag/string/)|
+|0023|[合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|                       |困难|[链表](https://leetcode-cn.com/tag/linked-list/)|
+|0024|[两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)|[JavaScript](./src/0024-swapPairs.js)|中等|[链表](https://leetcode-cn.com/tag/linked-list/)|
+|0025|[K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)|            |困难|[链表](https://leetcode-cn.com/tag/linked-list/)|
+|0026|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|                  |简单|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)|
+|0027|[移除元素](https://leetcode-cn.com/problems/remove-element/)|                         |简单|[数组](https://leetcode-cn.com/tag/array/)|
+|0028|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)|                     |简单|[字符串](https://leetcode-cn.com/tag/string/)|
+|0029|[两数相除](https://leetcode-cn.com/problems/divide-two-integers/)|[JavaScript](./src/0019-removeNthFromEnd.js)|中等|[数学](https://leetcode-cn.com/tag/math/)|
+|0030|[串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)|               |困难|[字符串](https://leetcode-cn.com/tag/string/)|
+
+
+
+
+
+
 
 
 好懒啊...不想写readme... (っ °Д °;)っ
