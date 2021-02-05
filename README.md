@@ -18,6 +18,7 @@
 [回溯算法](https://leetcode-cn.com/tag/backtracking/)，
 [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search/)，
 [栈](https://leetcode-cn.com/tag/stack/)，
+[位运算](https://leetcode-cn.com/tag/bit-manipulation/)，
 
 | # | 题目 | 解法 | 难度 | 标签 |
 |---|---------|:--------:|:----------:|:----:|
@@ -61,26 +62,63 @@
 |0038|[外观数列](https://leetcode-cn.com/problems/count-and-say/)|[JavaScript](./src/0038-countAndSay.js)|简单|[字符串](https://leetcode-cn.com/tag/string/)，[递归](https://leetcode-cn.com/tag/recursion/)|
 |0039|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|                            |中等|
 |0040|[组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)|                         |中等|
-|0041|[]()|                             |中等|
-|0042|[]()|                          |困难|
-|0043|[]()|                         |中等|
-|0044|[]()|                          |中等|
-|0045|[]()|                              |简单|
-|0046|[]()|                            |中等|
-|0047|[]()|                             |困难|
-|0048|[]()|                           |简单|
-|0049|[]()|                            |中等|
-|0050|[]()|                              |困难|
-|0051|[]()|                             |中等|
-|0052|[]()|                          |困难|
-|0053|[]()|                         |中等|
-|0054|[]()|                          |中等|
-|0055|[]()|                              |简单|
-|0056|[]()|                            |中等|
-|0057|[]()|                             |困难|
-|0058|[]()|                           |简单|
-|0059|[]()|                            |中等|
-
-
-
+|0041|[]()|[JavaScript](./src/)|中等|
+|0042|[]()|[JavaScript](./src/)|困难|
+|0043|[字符串相乘](https://leetcode-cn.com/problems/multiply-strings/)|[JavaScript](./src/0043-multiply.js)|中等|[数组](https://leetcode-cn.com/tag/array/)，[数学](https://leetcode-cn.com/tag/math/)|
+|0044|[]()|[JavaScript](./src/)|中等|
+|0045|[]()|[JavaScript](./src/)|简单|
+|0046|[]()|[JavaScript](./src/)|中等|
+|0047|[]()|[JavaScript](./src/)|困难|
+|0048|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|[JavaScript](./src/0048-rotate.js)|中等|[数组](https://leetcode-cn.com/tag/array/)|
+|0049|[字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)|[JavaScript](./src/0049-groupAnagrams.js)|中等|[数组](https://leetcode-cn.com/tag/array/)，[字符串](https://leetcode-cn.com/tag/string/)|
+|0050|[Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)|[JavaScript](./src/0050-myPow.js)|中等|[数学](https://leetcode-cn.com/tag/math/)，[位运算](https://leetcode-cn.com/tag/bit-manipulation/)|
+|0051|[]()|[JavaScript](./src/)|中等|
+|0052|[]()|[JavaScript](./src/)|困难|
+|0053|[]()|[JavaScript](./src/)|中等|
+|0054|[螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)|[JavaScript](./src/0054-spiralOrder.js)|中等|[数组](https://leetcode-cn.com/tag/array/)|
+|0055|[]()|[JavaScript](./src/)|简单|
+|0056|[]()|[JavaScript](./src/)|中等|
+|0057|[]()|[JavaScript](./src/)|困难|
+|0058|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word/)|[JavaScript](./src/0058-lengthOfLastWord.js)|简单|[数组](https://leetcode-cn.com/tag/array/)，[字符串](https://leetcode-cn.com/tag/string/)|
+|0059|[螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/)|[JavaScript](./src/0059-generateMatrix.js)|中等|[数组](https://leetcode-cn.com/tag/array/)|
+|0060|[]()|[JavaScript](./src/)|中等|
+|0061|[]()|[JavaScript](./src/)|中等|
+|0062|[]()|[JavaScript](./src/)|困难|
+|0063|[]()|[JavaScript](./src/)|中等|
+|0064|[]()|[JavaScript](./src/)|中等|
+|0065|[]()|[JavaScript](./src/)|简单|
+|0066|[]()|[JavaScript](./src/)|中等|
+|0067|[]()|[JavaScript](./src/)|困难|
+|0068|[]()|[JavaScript](./src/)|简单|
+|0069|[]()|[JavaScript](./src/)|中等|
+|0070|[]()|[JavaScript](./src/)|中等|
+|0071|[]()|[JavaScript](./src/)|中等|
+|0072|[]()|[JavaScript](./src/)|困难|
+|0073|[]()|[JavaScript](./src/)|中等|
+|0074|[]()|[JavaScript](./src/)|中等|
+|0075|[]()|[JavaScript](./src/)|简单|
+|0076|[]()|[JavaScript](./src/)|中等|
+|0077|[]()|[JavaScript](./src/)|困难|
+|0078|[]()|[JavaScript](./src/)|简单|
+|0079|[]()|[JavaScript](./src/)|中等|
+|0080|[]()|[JavaScript](./src/)|中等|
+|0081|[]()|[JavaScript](./src/)|中等|
+|0082|[]()|[JavaScript](./src/)|困难|
+|0083|[]()|[JavaScript](./src/)|中等|
+|0084|[]()|[JavaScript](./src/)|中等|
+|0085|[]()|[JavaScript](./src/)|简单|
+|0086|[]()|[JavaScript](./src/)|中等|
+|0087|[]()|[JavaScript](./src/)|困难|
+|0088|[]()|[JavaScript](./src/)|简单|
+|0089|[]()|[JavaScript](./src/)|中等|
+|0090|[]()|[JavaScript](./src/)|中等|
+|0091|[]()|[JavaScript](./src/)|中等|
+|0092|[]()|[JavaScript](./src/)|困难|
+|0093|[]()|[JavaScript](./src/)|中等|
+|0094|[]()|[JavaScript](./src/)|中等|
+|0095|[]()|[JavaScript](./src/)|简单|
+|0096|[]()|[JavaScript](./src/)|中等|
+|0097|[]()|[JavaScript](./src/)|困难|
+|0098|[]()|[JavaScript](./src/)|简单|
+|0099|[]()|[JavaScript](./src/)|中等|
 好懒啊...不想写readme... (っ °Д °;)っ
