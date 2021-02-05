@@ -12,8 +12,8 @@
  */
 
 /*----- solution 1 -----
-Iteration.
-Using quene.
+Iteration, BFS.
+Using queue.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
