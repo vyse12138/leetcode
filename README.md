@@ -39,9 +39,9 @@
 |0015|[三数之和](https://leetcode-cn.com/problems/3sum/)|[JavaScript](./src/0015-threeSum.js)|中等|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)|
 |0016|[最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/)|                  |中等|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)|
 |0017|[电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)|                         |中等|[字符串](https://leetcode-cn.com/tag/string/)，[递归](https://leetcode-cn.com/tag/recursion/)，[深度优先搜索](https://leetcode-cn.com/tag/depth-first-search/)|
-|0018|[四数之和](https://leetcode-cn.com/problems/4sum/)|                     |中等|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)，[哈希表](https://leetcode-cn.com/tag/hash-table/)|
+|0018|[四数之和](https://leetcode-cn.com/problems/4sum/)|                    |中等|[数组](https://leetcode-cn.com/tag/array/)，[双指针](https://leetcode-cn.com/tag/two-pointers/)，[哈希表](https://leetcode-cn.com/tag/hash-table/)|
 |0019|[删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[JavaScript](./src/0019-removeNthFromEnd.js)|中等|[双指针](https://leetcode-cn.com/tag/two-pointers/)，[链表](https://leetcode-cn.com/tag/linked-list/)|
-|0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|               |简单|[字符串](https://leetcode-cn.com/tag/string/)，[栈](https://leetcode-cn.com/tag/stack/)|
+|0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|[JavaScript](./src/0020-isValid.js)|简单|[字符串](https://leetcode-cn.com/tag/string/)，[栈](https://leetcode-cn.com/tag/stack/)|
 |0021|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[JavaScript](./src/0021-mergeTwoLists.js)|简单|[递归](https://leetcode-cn.com/tag/recursion/)，[链表](https://leetcode-cn.com/tag/linked-list/)|
 |0022|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|                |中等|[双指针](https://leetcode-cn.com/tag/two-pointers/)，[字符串](https://leetcode-cn.com/tag/string/)|
 |0023|[合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|                       |困难|[链表](https://leetcode-cn.com/tag/linked-list/)|
