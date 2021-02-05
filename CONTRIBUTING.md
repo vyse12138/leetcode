@@ -1,1 +1,3 @@
-直接发 issues 或者 pr 就行了哈
+# Contributing
+
+Feel free to contribute.
