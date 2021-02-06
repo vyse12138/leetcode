@@ -25,7 +25,7 @@ var inorderTraversal = function (root) {
     result.push(node.val);
     arguments.callee(node.right);
   }
-  inorder(root, result);
+  inorder(root);
   return result;
 };
 

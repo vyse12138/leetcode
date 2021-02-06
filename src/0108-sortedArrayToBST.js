@@ -12,7 +12,7 @@
  */
 
 /*----- solution 1 -----
-Recursion.
+Recursion. 
 Time complexity is O(n) 
 Space complexity is O(n)
 */
