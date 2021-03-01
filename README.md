@@ -2,7 +2,7 @@
 
 个人 Javascript 刷 Leetcode 的解法
 
-有问题的话欢迎发新 issue ヾ(•ω•`)o
+有问题的话欢迎发 issue ヾ(•ω•`)o
 
 标签：
 [数组](https://leetcode-cn.com/tag/array/)，
