@@ -2,10 +2,14 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+/*----- solution 1 -----
+dp, hold an array to store LIS for 0 ~ i
+Time complexity is O(n^2)
+Space complexity is O(n)
+*/
 var lengthOfLIS = function (nums) {
-  if (!nums.length) { return 0; }
-  let dp = [1];
-  let maxLength = 1;
+  const dp = [];
   for (let i = 0; i < nums.length; i++) {
     dp[i] = 1;
     for (let j = 0; j < i; j++) {
@@ -13,7 +17,8 @@ var lengthOfLIS = function (nums) {
         dp[i] = Math.max(dp[i], dp[j] + 1);
       }
     }
-    maxLength = Math.max(maxLength, dp[i]);
   }
-  return maxLength;
+  return Math.max(...dp);
 };
+
+
