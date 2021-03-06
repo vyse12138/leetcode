@@ -35,13 +35,14 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var nextGreaterElements = function (nums) {
-  const result = Array(nums.length).fill(-1), stack = [];
+  const result = Array(nums.length).fill(-1),
+    stack = [];
   for (let i = 0; i < nums.length * 2 - 1; i++) {
-    while(nums[stack[stack.length -1]] < nums[i%nums.length]) {
-      result[stack[stack.length -1]] = nums[i%nums.length];
+    while (nums[stack[stack.length - 1]] < nums[i % nums.length]) {
+      result[stack[stack.length - 1]] = nums[i % nums.length];
       stack.pop();
     }
-    stack.push(i%nums.length);
+    stack.push(i % nums.length);
   }
   return result;
 };
