@@ -1,10 +1,10 @@
 # leetcode-javascript
 
-个人 Javascript 刷 Leetcode 的解法
+用 Javascript 刷 Leetcode 的解法
 
-有问题的话欢迎发 issue ヾ(•ω•`)o
+冲 ヾ(•ω•\`)o
 
-标签：
+<!-- 标签：
 [数组](https://leetcode-cn.com/tag/array/)，
 [哈希表](https://leetcode-cn.com/tag/hash-table/)，
 [字符串](https://leetcode-cn.com/tag/string/)，
@@ -18,7 +18,7 @@
 [回溯算法](https://leetcode-cn.com/tag/backtracking/)，
 [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search/)，
 [栈](https://leetcode-cn.com/tag/stack/)，
-[位运算](https://leetcode-cn.com/tag/bit-manipulation/)，
+[位运算](https://leetcode-cn.com/tag/bit-manipulation/)， -->
 
 | # | 题目 | 解法 | 难度 | 标签 |
 |---|---------|:--------:|:----------:|:----:|
@@ -127,4 +127,4 @@
 
 
 
-好懒啊...不想写readme... (っ °Д °;)っ
+不想写 readme ... (っ °Д °;)っ
