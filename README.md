@@ -1,4 +1,4 @@
-# leetcode-javascript
+# leetcode
 
 用 Javascript 刷 Leetcode 的解法
 
