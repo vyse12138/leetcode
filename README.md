@@ -1,6 +1,6 @@
 # LeetCode
 
-用 Javascript / TypeScript 刷 LeetCode
+用 JavaScript / TypeScript 刷 LeetCode
 
 冲 ヾ(•ω•\`)o
 
