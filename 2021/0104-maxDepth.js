@@ -16,31 +16,31 @@ Recursion, DFS.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
-var maxDepth = function(root) {
-  let depth = 0, dfs = (root, currentDepth) => {
-    if (root) {
-      currentDepth++;
-      if (!root.left && !root.right) {
-        depth = Math.max(depth, currentDepth);
-      }
-      else {
-        dfs(root.left, currentDepth);
-        dfs(root,right,currentDepth);
+var maxDepth = function (root) {
+  let depth = 0,
+    dfs = (root, currentDepth) => {
+      if (root) {
+        currentDepth++
+        if (!root.left && !root.right) {
+          depth = Math.max(depth, currentDepth)
+        } else {
+          dfs(root.left, currentDepth)
+          dfs(root, right, currentDepth)
+        }
       }
     }
-  }
-  dfs(root, 0);
-  return depth;
-};
+  dfs(root, 0)
+  return depth
+}
 
 /*----- solution 2 -----
 Recursion, DFS.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
-var maxDepth = function(root) {
+var maxDepth = function (root) {
   if (!root) {
-    return 0;
+    return 0
   }
-  return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
-};
+  return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1
+}

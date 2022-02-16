@@ -4,7 +4,6 @@
  * @return {number}
  */
 
-
 /*----- solution 1 -----
 
 Time complexity is O(log(n))
@@ -12,22 +11,22 @@ Space complexity is O(1)
 */
 var myPow = function (x, n) {
   if (x === 0) {
-    return 0;
+    return 0
   }
   if (n < 0) {
-    x = 1 / x;
-    n = -n;
+    x = 1 / x
+    n = -n
   }
-  let result = 1;
+  let result = 1
   while (n) {
-    if (n%2 === 1) {
-      result *= x;
+    if (n % 2 === 1) {
+      result *= x
     }
-    x *= x;
-    n = parseInt(n/2);
+    x *= x
+    n = parseInt(n / 2)
   }
-  return result;
-};
+  return result
+}
 /*----- solution 2 -----
 Modify solution 1 with Bitwise operations
 Time complexity is O(log(n))
@@ -35,19 +34,19 @@ Space complexity is O(1)
 */
 var myPow = function (x, n) {
   if (x === 0) {
-    return 0;
+    return 0
   }
   if (n < 0) {
-    x = 1 / x;
-    n = -n;
+    x = 1 / x
+    n = -n
   }
-  let result = 1;
+  let result = 1
   while (n) {
     if (n & 1) {
-      result *= x;
+      result *= x
     }
-    x *= x;
-    n >>>= 1;
+    x *= x
+    n >>>= 1
   }
-  return result;
-};
+  return result
+}

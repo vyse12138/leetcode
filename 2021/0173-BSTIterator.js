@@ -16,32 +16,31 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var BSTIterator = function (root) {
-  this.array = [];
-  let dfs = (node) => {
+  this.array = []
+  let dfs = node => {
     if (!node) {
-      return;
+      return
     }
-    dfs(node.left);
-    this.array.push(node.val);
-    dfs(node.right);
+    dfs(node.left)
+    this.array.push(node.val)
+    dfs(node.right)
   }
-  dfs(root);
-};
+  dfs(root)
+}
 
 /**
  * @return {number}
  */
 BSTIterator.prototype.next = function () {
-  return this.array.shift();
-};
+  return this.array.shift()
+}
 
 /**
  * @return {boolean}
  */
 BSTIterator.prototype.hasNext = function () {
-  return this.array.length;
-
-};
+  return this.array.length
+}
 
 /**
  * Your BSTIterator object will be instantiated and called as such:

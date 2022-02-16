@@ -18,23 +18,23 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var hasPathSum = function (root, targetSum) {
-  let result = false, dfs = (node, sum) => {
-    if (node) {
-      sum += node.val;
-      if (!node.left && !node.right) {
-        if (targetSum === sum) {
-          result = true;
+  let result = false,
+    dfs = (node, sum) => {
+      if (node) {
+        sum += node.val
+        if (!node.left && !node.right) {
+          if (targetSum === sum) {
+            result = true
+          }
+        } else {
+          dfs(node.left, sum)
+          dfs(node.right, sum)
         }
       }
-      else {
-        dfs(node.left, sum);
-        dfs(node.right, sum);
-      }
     }
-  }
-  dfs(root, 0);
-  return result;
-};
+  dfs(root, 0)
+  return result
+}
 
 /*----- solution 2 -----
 Recursion, DFS.
@@ -44,10 +44,13 @@ Space complexity is O(n)
 */
 var hasPathSum = function (root, targetSum) {
   if (!root) {
-    return false;
+    return false
   }
   if (!root.left && !root.right) {
-    return targetSum === root.val;
+    return targetSum === root.val
   }
-  return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
-};
+  return (
+    hasPathSum(root.left, targetSum - root.val) ||
+    hasPathSum(root.right, targetSum - root.val)
+  )
+}

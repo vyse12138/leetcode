@@ -18,24 +18,27 @@ Space complexity is O(n)
 */
 var zigzagLevelOrder = function (root) {
   if (!root) {
-    return [];
+    return []
   }
-  let result = [], queue = [root], fromLeft = true;
+  let result = [],
+    queue = [root],
+    fromLeft = true
   while (queue.length) {
-    let length = queue.length, row = [];
+    let length = queue.length,
+      row = []
     while (length--) {
-      let node = queue.shift();
+      let node = queue.shift()
       if (fromLeft) {
-        row.push(node.val);
+        row.push(node.val)
       }
       if (!fromLeft) {
-        row.unshift(node.val);
+        row.unshift(node.val)
       }
-      node.left && queue.push(node.left);
-      node.right && queue.push(node.right);
+      node.left && queue.push(node.left)
+      node.right && queue.push(node.right)
     }
-    fromLeft = !fromLeft;
-    result.push(row);
+    fromLeft = !fromLeft
+    result.push(row)
   }
-  return result;
-};
+  return result
+}

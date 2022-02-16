@@ -17,15 +17,16 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var isValidBST = function (root) {
-  let result = true, dfs = (node, lower, upper) => {
-    if (node) {
-      if (node.val <= lower || node.val >= upper) {
-        result = false;
+  let result = true,
+    dfs = (node, lower, upper) => {
+      if (node) {
+        if (node.val <= lower || node.val >= upper) {
+          result = false
+        }
+        dfs(node.left, lower, node.val)
+        dfs(node.right, node.val, upper)
       }
-      dfs(node.left, lower, node.val);
-      dfs(node.right, node.val, upper);
     }
-  }
-  dfs(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
-  return result;
-};
+  dfs(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER)
+  return result
+}

@@ -17,18 +17,18 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var sumNumbers = function (root) {
-  let result = 0, dfs = (node, sum) => {
-    if (node) {
-      sum += node.val;
-      if (!node.left && !node.right) {
-        result += sum - 0;
-      }
-      else {
-        dfs(node.left, sum);
-        dfs(node.right, sum);
+  let result = 0,
+    dfs = (node, sum) => {
+      if (node) {
+        sum += node.val
+        if (!node.left && !node.right) {
+          result += sum - 0
+        } else {
+          dfs(node.left, sum)
+          dfs(node.right, sum)
+        }
       }
     }
-  }
-  dfs(root, '');
-  return result;
-};
+  dfs(root, '')
+  return result
+}

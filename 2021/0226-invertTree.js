@@ -22,11 +22,11 @@ Space complexity is O(n)
 */
 var invertTree = function (root) {
   if (!root) {
-    return null;
+    return null
   }
-  let left = invertTree(root.left), 
-  right = invertTree(root.right);
-  root.left = right;
-  root.right = left;
-  return root;
-};
+  let left = invertTree(root.left),
+    right = invertTree(root.right)
+  root.left = right
+  root.right = left
+  return root
+}

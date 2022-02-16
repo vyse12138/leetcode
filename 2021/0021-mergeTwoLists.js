@@ -18,20 +18,19 @@ Then append left over list.
 Time complexity is O(n + m) where n and m are the length of l1 and l2
 Space complexity is O(1)
 */
-var mergeTwoLists = function(l1, l2) {
-    let dummyHead = new ListNode(0);
-    let pointer = dummyHead;
-    while (l1 && l2) {
-      if (l1.val <= l2.val) {
-        pointer.next = l1;
-        l1 = l1.next;
-      }
-      else {
-        pointer.next = l2;
-        l2 = l2.next;
-      }
-      pointer = pointer.next;
+var mergeTwoLists = function (l1, l2) {
+  let dummyHead = new ListNode(0)
+  let pointer = dummyHead
+  while (l1 && l2) {
+    if (l1.val <= l2.val) {
+      pointer.next = l1
+      l1 = l1.next
+    } else {
+      pointer.next = l2
+      l2 = l2.next
     }
-    pointer.next = (l1 === null) ? l2 : l1;
-    return dummyHead.next;
-};
+    pointer = pointer.next
+  }
+  pointer.next = l1 === null ? l2 : l1
+  return dummyHead.next
+}

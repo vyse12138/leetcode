@@ -20,19 +20,19 @@ Space complexity is O(n)
 */
 var connect = function (root) {
   if (!root) {
-    return null;
+    return null
   }
-  let queue = [root];
+  let queue = [root]
   while (queue.length) {
-    let length = queue.length;
+    let length = queue.length
     while (length--) {
-      let node = queue.shift();
+      let node = queue.shift()
       if (length !== 0) {
-        node.next = queue[0];
+        node.next = queue[0]
       }
-      node.left && queue.push(node.left);
-      node.right && queue.push(node.right);
+      node.left && queue.push(node.left)
+      node.right && queue.push(node.right)
     }
   }
-  return root;
-};
+  return root
+}

@@ -17,22 +17,24 @@ Using queue.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
-var rightSideView = function(root) {
+var rightSideView = function (root) {
   if (!root) {
-    return [];
+    return []
   }
-  let result = [], queue = [root];
-  while(queue.length) {
-    let length = queue.length, right = 0;
+  let result = [],
+    queue = [root]
+  while (queue.length) {
+    let length = queue.length,
+      right = 0
     while (length--) {
-      let node = queue.shift();
+      let node = queue.shift()
       if (length === 0) {
-        right = node.val;
+        right = node.val
       }
-      node.left && queue.push(node.left);
-      node.right && queue.push(node.right);
+      node.left && queue.push(node.left)
+      node.right && queue.push(node.right)
     }
-    result.push(right);
+    result.push(right)
   }
-  return result;
-};
+  return result
+}

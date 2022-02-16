@@ -14,12 +14,12 @@ Time complexity is O(nmlog(m)) where m is the max length of string in strs
 Space complexity is O(mn)
 */
 var groupAnagrams = function (strs) {
-  let map = new Map();
+  let map = new Map()
   for (let str of strs) {
-    let key = str.split('').sort().join('');
-    let list = map.get(key) ? map.get(key) : new Array();
-    list.push(str);
-    map.set(key, list);
+    let key = str.split('').sort().join('')
+    let list = map.get(key) ? map.get(key) : new Array()
+    list.push(str)
+    map.set(key, list)
   }
-  return Array.from(map.values());
-};
+  return Array.from(map.values())
+}

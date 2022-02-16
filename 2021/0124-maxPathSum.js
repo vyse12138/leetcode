@@ -17,17 +17,16 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var maxPathSum = function (root) {
-  let result = Number.MIN_SAFE_INTEGER, maxGain = node => {
-    if (!node) {
-      return 0;
+  let result = Number.MIN_SAFE_INTEGER,
+    maxGain = node => {
+      if (!node) {
+        return 0
+      }
+      let leftGain = Math.max(maxGain(node.left), 0),
+        rightGain = Math.max(maxGain(node.right), 0)
+      result = Math.max(result, leftGain + rightGain + node.val)
+      return node.val + Math.max(leftGain, rightGain)
     }
-    let leftGain = Math.max(maxGain(node.left), 0),
-      rightGain = Math.max(maxGain(node.right), 0);
-    result = Math.max(result, leftGain + rightGain + node.val);
-    return node.val + Math.max(leftGain, rightGain)
-  }
-  maxGain(root);
-  return result;
-};
-
-
+  maxGain(root)
+  return result
+}

@@ -17,22 +17,22 @@ Using queue.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
-var levelOrder = function(root) {
-  if(!root) {
-    return [];
+var levelOrder = function (root) {
+  if (!root) {
+    return []
   }
-  let queue = [root], result = [];
-  while(queue.length > 0){
-    let length = queue.length;
-    let row = [];
-    while(length--){
-      let node = queue.shift();
-      row.push(node.val);
-      node.left && queue.push(node.left);
-      node.right && queue.push(node.right);
+  let queue = [root],
+    result = []
+  while (queue.length > 0) {
+    let length = queue.length
+    let row = []
+    while (length--) {
+      let node = queue.shift()
+      row.push(node.val)
+      node.left && queue.push(node.left)
+      node.right && queue.push(node.right)
     }
-    result.push(row);
+    result.push(row)
   }
-  return result;
-};
-
+  return result
+}

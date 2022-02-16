@@ -17,19 +17,19 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var binaryTreePaths = function (root) {
-  const result = [], buildPath = (node, path) => {
-    if (node) {
-      path += node.val.toString();
-      if (!node.left && !node.right) {
-        result.push(path);
-      }
-      else {
-        path += "->";
-        buildPath(node.left, path);
-        buildPath(node.right, path);
+  const result = [],
+    buildPath = (node, path) => {
+      if (node) {
+        path += node.val.toString()
+        if (!node.left && !node.right) {
+          result.push(path)
+        } else {
+          path += '->'
+          buildPath(node.left, path)
+          buildPath(node.right, path)
+        }
       }
     }
-  }
-  buildPath(root, '');
-  return result;
-};
+  buildPath(root, '')
+  return result
+}

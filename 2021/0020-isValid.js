@@ -13,17 +13,16 @@ var isValid = function (s) {
     [')', '('],
     [']', '['],
     ['}', '{']
-  ]);
-  let stack = [];
-  s = s.split('');
-  while(s.length) {
-    let current = s.shift();
-    if (map.has(current) && map.get(current) === stack[stack.length-1]) {
-      stack.pop();
-    }
-    else {
-      stack.push(current);
+  ])
+  let stack = []
+  s = s.split('')
+  while (s.length) {
+    let current = s.shift()
+    if (map.has(current) && map.get(current) === stack[stack.length - 1]) {
+      stack.pop()
+    } else {
+      stack.push(current)
     }
   }
-  return !stack.length;
-};
+  return !stack.length
+}

@@ -22,19 +22,18 @@ Space complexity is O(n)
 */
 var isSymmetric = function (root) {
   if (!root) {
-    return true;
+    return true
   }
   const compare = (node1, node2) => {
     if (!node1 && !node2) {
-      return true;
-    }
-    else if (!node1 || !node2 || node1.val !== node2.val) {
-      return false;
+      return true
+    } else if (!node1 || !node2 || node1.val !== node2.val) {
+      return false
     }
     return compare(node1.left, node2.right) && compare(node1.right, node2.left)
   }
-  return compare(root.left, root.right);
-};
+  return compare(root.left, root.right)
+}
 
 /*----- solution 1 -----
 DFS, iteration, queue.
@@ -44,24 +43,25 @@ Space complexity is O(n)
 */
 var isSymmetric = function (root) {
   if (!root) {
-    return true;
+    return true
   }
-  const queue = [];
-  queue.push(root);
-  queue.push(root);
+  const queue = []
+  queue.push(root)
+  queue.push(root)
   while (queue.length) {
-    let node1 = queue.pop(), node2 = queue.pop();
+    let node1 = queue.pop(),
+      node2 = queue.pop()
     if (!node1 || !node2 || node1.val !== node2.val) {
-      return false;
+      return false
     }
     if (node1.left || node2.right) {
-      queue.unshift(node1.left);
-      queue.unshift(node2.right);
+      queue.unshift(node1.left)
+      queue.unshift(node2.right)
     }
     if (node1.right || node2.left) {
-      queue.unshift(node1.right);
-      queue.unshift(node2.left);
+      queue.unshift(node1.right)
+      queue.unshift(node2.left)
     }
   }
-  return true;
-};
+  return true
+}

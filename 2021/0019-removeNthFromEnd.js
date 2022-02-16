@@ -20,23 +20,25 @@ In the second iteration, go to the position and delete it.
 Time complexity is O(n)
 Space complexity is O(1)
 */
-var removeNthFromEnd = function(head, n) {
-  let count = 0, pointer = head, dummyHead = new ListNode(0,head);
+var removeNthFromEnd = function (head, n) {
+  let count = 0,
+    pointer = head,
+    dummyHead = new ListNode(0, head)
   while (pointer) {
-    count++;
-    pointer = pointer.next;
+    count++
+    pointer = pointer.next
   }
-  count -= n;
-  pointer = dummyHead;
+  count -= n
+  pointer = dummyHead
   while (pointer && pointer.next) {
     if (count == 0) {
-      pointer.next = pointer.next.next;
+      pointer.next = pointer.next.next
     }
-    count--;
-      pointer = pointer.next;
+    count--
+    pointer = pointer.next
   }
-  return dummyHead.next;
-};
+  return dummyHead.next
+}
 
 /*----- solution 2 -----
 Two pointers.
@@ -47,17 +49,17 @@ delete it.
 Time complexity is O(n)
 Space complexity is O(1)
 */
-var removeNthFromEnd = function(head, n) {
-  let dummyHead = new ListNode(0,head),
-  fast = head,
-  slow = dummyHead;
-  for (let i = 0; i < n; i++){
-    fast = fast.next;
+var removeNthFromEnd = function (head, n) {
+  let dummyHead = new ListNode(0, head),
+    fast = head,
+    slow = dummyHead
+  for (let i = 0; i < n; i++) {
+    fast = fast.next
   }
   while (fast) {
-    fast = fast.next;
-    slow = slow.next;
+    fast = fast.next
+    slow = slow.next
   }
-  slow.next = slow.next.next;
-  return dummyHead.next;
-};
+  slow.next = slow.next.next
+  return dummyHead.next
+}

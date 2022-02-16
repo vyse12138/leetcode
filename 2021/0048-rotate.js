@@ -14,17 +14,23 @@ e.g.[1,2,3],    [3,2,1],    [7,4,1],
 Time complexity is O(n^2)
 Space complexity is O(1)
 */
-var rotate = function(matrix) {
-    const length = matrix.length;
-    for (let i = 0; i < length; i++){
-        for (let j = 0; j < length/2; j++){
-            [matrix[i][j], matrix[i][length-j-1]] = [matrix[i][length-j-1], matrix[i][j]];
-        }
+var rotate = function (matrix) {
+  const length = matrix.length
+  for (let i = 0; i < length; i++) {
+    for (let j = 0; j < length / 2; j++) {
+      ;[matrix[i][j], matrix[i][length - j - 1]] = [
+        matrix[i][length - j - 1],
+        matrix[i][j]
+      ]
     }
-    for (let i = 0; i < length; i++){
-        for (let j = 0; j < length-i; j++){
-            [matrix[i][j], matrix[length-1-j][length-1-i]] = [matrix[length-1-j][length-1-i], matrix[i][j]];
-        }
+  }
+  for (let i = 0; i < length; i++) {
+    for (let j = 0; j < length - i; j++) {
+      ;[matrix[i][j], matrix[length - 1 - j][length - 1 - i]] = [
+        matrix[length - 1 - j][length - 1 - i],
+        matrix[i][j]
+      ]
     }
-    return matrix;
-};
+  }
+  return matrix
+}

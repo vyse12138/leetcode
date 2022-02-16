@@ -19,13 +19,13 @@ Space complexity is O(n)
 var sortedArrayToBST = function (nums) {
   let dfs = (nums, left, right) => {
     if (left > right) {
-      return null;
+      return null
     }
-    let mid = Math.floor((left + right) / 2);
-    let node = new TreeNode(nums[mid]);
-    node.left = dfs(nums, left, mid - 1);
-    node.right = dfs(nums, mid + 1, right);
-    return node;
+    let mid = Math.floor((left + right) / 2)
+    let node = new TreeNode(nums[mid])
+    node.left = dfs(nums, left, mid - 1)
+    node.right = dfs(nums, mid + 1, right)
+    return node
   }
-  return dfs(nums, 0, nums.length - 1);
-};
+  return dfs(nums, 0, nums.length - 1)
+}

@@ -13,17 +13,18 @@ Time complexity is O(n^2)
 Space complexity is O(1)
 */
 var maxArea = function (height) {
-  let left = 0, right = height.length - 1, maxArea = 0;
+  let left = 0,
+    right = height.length - 1,
+    maxArea = 0
   while (left < right) {
     let currentWidth = right - left,
-      currentHeight = Math.min(height[left], height[right]);
-    maxArea = Math.max(maxArea, currentWidth * currentHeight);
+      currentHeight = Math.min(height[left], height[right])
+    maxArea = Math.max(maxArea, currentWidth * currentHeight)
     if (currentHeight === height[left]) {
-      left++;
-    }
-    else {
-      right--;
+      left++
+    } else {
+      right--
     }
   }
-  return maxArea;
-};
+  return maxArea
+}

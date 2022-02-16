@@ -17,17 +17,18 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var preorderTraversal = function (root) {
-  const result = [], preorder = function(node) {
-    if (node == null) {
-      return;
+  const result = [],
+    preorder = function (node) {
+      if (node == null) {
+        return
+      }
+      result.push(node.val)
+      arguments.callee(node.left)
+      arguments.callee(node.right)
     }
-    result.push(node.val);
-    arguments.callee(node.left);
-    arguments.callee(node.right);
-  }
-  preorder(root, result);
-  return result;
-};
+  preorder(root, result)
+  return result
+}
 
 /*----- solution 2 -----
 Iterations.
@@ -36,22 +37,29 @@ Time complexity is O(n)
 Space complexity is O(n)
 */
 var preorderTraversal = function (root) {
-  const result = [], stack = [];
-  root && stack.push(root);
+  const result = [],
+    stack = []
+  root && stack.push(root)
   while (stack.length) {
-    let treeNode = stack.pop();
-    result.push(treeNode.val);
-    treeNode.right && stack.push(treeNode.right);
-    treeNode.left && stack.push(treeNode.left);
+    let treeNode = stack.pop()
+    result.push(treeNode.val)
+    treeNode.right && stack.push(treeNode.right)
+    treeNode.left && stack.push(treeNode.left)
   }
-  return result;
-};
+  return result
+}
 
 /*----- solution 3 -----
 Recursion.
 Time complexity is O(n) 
 Space complexity is O(n)
 */
-var preorderTraversal = function(root) {
-  return arguments[0] ? [arguments[0].val, ...arguments.callee(arguments[0].left), ...arguments.callee(arguments[0].right)] : [];
-};
+var preorderTraversal = function (root) {
+  return arguments[0]
+    ? [
+        arguments[0].val,
+        ...arguments.callee(arguments[0].left),
+        ...arguments.callee(arguments[0].right)
+      ]
+    : []
+}
