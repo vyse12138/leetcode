@@ -30,16 +30,7 @@ export function Merge(pHead1: ListNode, pHead2: ListNode): ListNode {
     current = current.next
   }
 
-  while (pHead1 !== null) {
-    current.next = pHead1
-    pHead1 = pHead1.next
-    current = current.next
-  }
+  current.next = pHead1 ? pHead1 : pHead2
 
-  while (pHead2 !== null) {
-    current.next = pHead2
-    pHead2 = pHead2.next
-    current = current.next
-  }
   return head.next
 }

@@ -12,22 +12,24 @@
  *
  *
  * @param head ListNode类
- * @return bool布尔型
+ * @return ListNode类
  */
-export function hasCycle(head: ListNode): boolean {
-  let slow = head,
-    fast = head
 
-  while (1) {
-    slow = slow?.next
-    fast = fast?.next?.next
+export function oddEvenList(head: ListNode): ListNode {
+  if (!head || !head.next) return head
 
-    if (!slow || !fast) {
-      return false
-    }
+  let evenHead = head.next,
+    odd = head,
+    even = head.next
 
-    if (slow.val === fast.val) {
-      return true
-    }
+  while (even !== null && even.next !== null) {
+    odd.next = even.next
+    odd = odd.next
+    even.next = odd.next
+    even = even.next
   }
+
+  odd.next = evenHead
+
+  return head
 }

@@ -24,6 +24,10 @@ export function FindKthToTail(pHead: ListNode, k: number): ListNode {
     length++
   }
 
+  if (k > length) {
+    return null
+  }
+
   for (let i = 0; i < length - k; i++) {
     pHead = pHead.next
   }
