@@ -1,6 +1,6 @@
 # LeetCode
 
-Leetcode 的 JavaScript / TypeScript 题解
+个人 Leetode 的 JavaScript / TypeScript 题解
 
 - `2021`: 2021 年刷的题
 - `2022`: 2022 年刷的题
