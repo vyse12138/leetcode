@@ -1,0 +1,84 @@
+class TreeNode {
+  val: number
+  left: TreeNode | null
+  right: TreeNode | null
+  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    this.val = val === undefined ? 0 : val
+    this.left = left === undefined ? null : left
+    this.right = right === undefined ? null : right
+  }
+}
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * @param root TreeNode类
+ * @param o1 int整型
+ * @param o2 int整型
+ * @return int整型
+ */
+export function lowestCommonAncestor(
+  root: TreeNode,
+  o1: number,
+  o2: number
+): number {
+  let leftPath: number[], rightPath: number[]
+
+  let target = o1,
+    tempArr: number[] = [],
+    found = false
+
+  const recFind = (node: TreeNode) => {
+    if (found || !node) {
+      return
+    }
+    if (node.val === target) {
+      found = true
+    }
+
+    tempArr.push(node.val)
+
+    node.left && recFind(node.left)
+    node.right && recFind(node.right)
+    if (!found) tempArr.pop()
+  }
+  recFind(root)
+  leftPath = tempArr
+  tempArr = []
+  found = false
+  target = o2
+  recFind(root)
+  rightPath = tempArr
+
+  let res = 0
+  while (true) {
+    let a = leftPath.shift()
+    let b = rightPath.shift()
+
+    if (a !== b) {
+      return res
+    }
+    res = a
+  }
+}
+
+export function lowestCommonAncestor2(
+  root: TreeNode,
+  o1: number,
+  o2: number
+): number {
+  const rec = (node: TreeNode): number => {
+    if (!node) return null
+    if (node.val === o1) return o1
+    if (node.val === o2) return o2
+
+    let left = rec(node.left)
+    let right = rec(node.right)
+
+    if (!left && !right) return 0
+    if (!left) return right
+    if (!right) return left
+    return node.val
+  }
+  return rec(root)
+}
