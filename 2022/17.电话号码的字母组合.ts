@@ -6,7 +6,7 @@
 
 // @lc code=start
 function letterCombinations(digits: string): string[] {
-  if (digits === '') return []
+  if (digits.length === 0) return []
 
   const map = new Map<string, string>()
   map.set('2', 'abc')
@@ -18,24 +18,23 @@ function letterCombinations(digits: string): string[] {
   map.set('8', 'tuv')
   map.set('9', 'wxyz')
 
-  const res = []
-  const comb = []
+  const res: string[] = []
+  let temp: string = ''
 
-  ;(function rec() {
-    if (comb.length === digits.length) {
-      res.push(comb.join(''))
+  const backTracking = (index: number) => {
+    if (temp.length === digits.length) {
+      res.push(temp)
       return
     }
 
-    const chars = map.get(digits[comb.length])
-
-    for (const char of chars) {
-      comb.push(char)
-      rec()
-      comb.pop()
+    let letters = map.get(digits[index])
+    for (const char of letters) {
+      temp += char
+      backTracking(index + 1)
+      temp = temp.slice(0, -1)
     }
-  })()
-
+  }
+  backTracking(0)
   return res
 }
 // @lc code=end
