@@ -9,20 +9,15 @@ function subsets(nums: number[]): number[][] {
   const res: number[][] = []
   const temp: number[] = []
 
-  const rec = (index: number) => {
-    if (index === nums.length) {
-      res.push(temp.slice())
-      return
+  const backTracking = (index: number) => {
+    res.push(temp.slice())
+    for (let i = index; i < nums.length; i++) {
+      temp.push(nums[i])
+      backTracking(i + 1)
+      temp.pop()
     }
-
-    temp.push(nums[index])
-    rec(index + 1)
-    temp.pop()
-
-    rec(index + 1)
   }
-
-  rec(0)
+  backTracking(0)
 
   return res
 }
