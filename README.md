@@ -1,6 +1,6 @@
 # LeetCode
 
-个人 Leetode 的 JavaScript / TypeScript 题解
+个人 LeetCode([小诸不是小猪](https://leetcode.cn/u/xiao-zhu-69/)) 的 JavaScript / TypeScript 题解
 
 - `2021`: 2021 年乱刷的题
 - `2022`: 2022 年乱刷的题
